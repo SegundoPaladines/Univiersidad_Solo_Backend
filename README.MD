@@ -1,5 +1,5 @@
 # Universidad - Django App 
-Este repositorio contiene una herramienta de software desarrollada en Django para gestión de facultades, programas y profesores de una universidad. 
+Este repositorio contiene una herramienta de software de solo backend desarrollada con Django Rest Framework para gestión de facultades, programas y profesores de una universidad. 
 
 ### Instrucciones para Clonar y Configurar la App
 Si usas Windows, se recomienda utilizar GitBash.
