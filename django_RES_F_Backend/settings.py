@@ -28,17 +28,39 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'universidad',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+##quien puede consultar la api
+CORS_ALLOWED_ORIGINS = [
+    ##lista de urls permitidas
+]
+
+##definir los aceptados mediante exprecion regular
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^.*$",
+]
+
+##metodos permitidos
+CORS_ALLOW_METHODS = (
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+)
 
 ROOT_URLCONF = 'django_RES_F_Backend.urls'
 
