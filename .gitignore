@@ -10,3 +10,4 @@ __pycache__/
 media
 /media
 media/
+db.sqlite3
